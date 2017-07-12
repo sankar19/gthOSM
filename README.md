@@ -6,6 +6,7 @@ The following tools were used to convert the open street map in pbf format to a 
 
 1. One band of Sentinel-1 or 2 (or other sensor) image in geotiff format is required. The RGB image over the region of France is shown below:
 
+Sentinel-2 image courtesy of "Copernicus Sentinel data [2017]"
 
 ![alt text](https://github.com/sankar19/gthOSM/blob/master/France1_RGB_rsz.jpg)
 
@@ -36,6 +37,14 @@ osmtogeojson /SAR/sar/france/forests_france.osm > /SAR/sar/france/forests_france
 
 rio rasterize /data/forests_france.tif --like /data/VH_SAR.tif < /data/forests_france.geojson
 
-The corresponding image is shown below:
+8. Ground truth with three classes are shown below for the France image [forest, farmland and water, river]
+
+![alt text](https://github.com/sankar19/gthOSM/blob/master/France1_gth_rsz.png)
 
 
+
+If you find the process helpful, you can cite the website. Classification results will be available in the following papers;
+
+S. Piramanayagam, et al. , “Supervised Classification of Multisensor Remote Sensed Images using Deep Learning Framework”, for submitted to ISPRS Journal, 2017.
+
+S. Piramanayagam, et al. , “Classification of remote sensed images using random forests and CRF-RNN framework”, SPIE remote sensing, 2016.
