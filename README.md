@@ -45,9 +45,9 @@ For France it is named: france-latest.osm.pbf
 
 9. If you find the process helpful, you can cite the website. Classification results will be available in the following papers;
 
-S. Piramanayagam, et al. , “Supervised Classification of Multisensor Remote Sensed Images using Deep Learning Framework”, for submitted to ISPRS Journal, 2017.
+* S. Piramanayagam, et al. , “Supervised Classification of Multisensor Remote Sensed Images using Deep Learning Framework”, for submitted to ISPRS Journal, 2017.
 
-S. Piramanayagam, et al. , “Classification of remote sensed images using random forests and CRF-RNN framework”, SPIE remote sensing, 2016.
+* S. Piramanayagam, et al. , “Classification of remote sensed images using random forests and CRF-RNN framework”, SPIE remote sensing, 2016.
 
 
 # Pre-requisites
