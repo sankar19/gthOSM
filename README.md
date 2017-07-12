@@ -20,23 +20,23 @@ For France it is named: france-latest.osm.pbf
 
 4. Next use the tool osmosis to select features in the bounding box (name: france_poly.osm.pbf). The command ::
 
-    bin/osmosis --read-pbf file="/data/france-latest.osm.pbf" --bounding-polygon file="/data/france.poly" --write-pbf file="/data/france_poly.osm.pbf"
+    ```bin/osmosis --read-pbf file="/data/france-latest.osm.pbf" --bounding-polygon file="/data/france.poly" --write-pbf file="/data/france_poly.osm.pbf"```
 
 
 5. A specific feature or class can be extracted by the following python script. The python script was extended from pyosmium examples [https://github.com/osmcode/pyosmium/blob/master/examples/filter_coastlines.py].
 
-    python [forests.py](https://github.com/sankar19/gthOSM/forests.py)  /data/france_poly.osm.pbf /data/forests_france.pbf
+    ```python [forests.py](https://github.com/sankar19/gthOSM/forests.py)  /data/france_poly.osm.pbf /data/forests_france.pbf```
 
 6. Then two tools are used to convert the .pbf to .geojson
 
-    ./osmconvert64 /data/forests_france.pbf > /data/forests_france.osm
+    ```./osmconvert64 /data/forests_france.pbf > /data/forests_france.osm
 
-    osmtogeojson /data/forests_france.osm > /data/forests_france.geojson
+    osmtogeojson /data/forests_france.osm > /data/forests_france.geojson```
 
 
 7. In the final step, binary image for the forest class is obtained by utilizing rio raserize tool.
 
-    rio rasterize /data/forests_france.tif --like /data/VH_SAR.tif < /data/forests_france.geojson
+    ```rio rasterize /data/forests_france.tif --like /data/VH_SAR.tif < /data/forests_france.geojson```
 
 
 8. Ground truth with three classes are shown below for the France image [forest, farmland and water, river]
