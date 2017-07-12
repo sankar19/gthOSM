@@ -1,6 +1,4 @@
-# gthOSM
-
-Steps to generate ground truth image from open street map,
+# Steps to generate ground truth image from open street map
 
 The following tools were used to convert the open street map in pbf format to a tif file. Note there could be other steps to accomplish the following.
 
