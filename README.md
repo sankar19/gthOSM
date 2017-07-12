@@ -22,7 +22,7 @@ Next use the tool osmosis to select features in the bounding box (name: france_p
 
 The command ::
 
-bin/osmosis --read-pbf file="/data/france-latest.osm.pbf" --bounding-polygon file="/data/france.poly" --write-pbf file="/data/france_poly.osm.pbf"
+    bin/osmosis --read-pbf file="/data/france-latest.osm.pbf" --bounding-polygon file="/data/france.poly" --write-pbf file="/data/france_poly.osm.pbf"
 
 
 A specific feature or class can be extracted by the following python script: 
@@ -34,14 +34,14 @@ The python script was extended from pyosmium examples [https://github.com/osmcod
 
 Then two tools are used to convert the .pbf to .geojson
 
-./osmconvert64 /SAR/sar/france/forests_france.pbf > /SAR/sar/france/forests_france.osm
+    ./osmconvert64 /data/forests_france.pbf > /data/forests_france.osm
 
-osmtogeojson /SAR/sar/france/forests_france.osm > /SAR/sar/france/forests_france.geojson
+    osmtogeojson /data/forests_france.osm > /data/forests_france.geojson
 
 
 In the final step, binary image for the forest class is obtained by utilizing rio raserize tool.
 
-rio rasterize /data/forests_france.tif --like /data/VH_SAR.tif < /data/forests_france.geojson
+    rio rasterize /data/forests_france.tif --like /data/VH_SAR.tif < /data/forests_france.geojson
 
 
 Ground truth with three classes are shown below for the France image [forest, farmland and water, river]
@@ -55,3 +55,13 @@ If you find the process helpful, you can cite the website. Classification result
 S. Piramanayagam, et al. , “Supervised Classification of Multisensor Remote Sensed Images using Deep Learning Framework”, for submitted to ISPRS Journal, 2017.
 
 S. Piramanayagam, et al. , “Classification of remote sensed images using random forests and CRF-RNN framework”, SPIE remote sensing, 2016.
+
+
+# Pre-requisites
+
+The above process require installation of various tools in the linux machine:
+
+1. rasterio (https://github.com/mapbox/rasterio)
+2. osmtogeojson (https://github.com/tyrasd/osmtogeojson)
+3. osmconvert64
+4. osmosis (http://wiki.openstreetmap.org/wiki/Osmosis/Installation)
