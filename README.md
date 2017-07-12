@@ -6,7 +6,7 @@ The following tools were used to convert the open street map in pbf format to a 
 
 1. One band of Sentinel-1 or 2 (or other sensor) image in geotiff format is required. The RGB image over the region of France is shown below:
 
-Sentinel-2 image courtesy of "Copernicus Sentinel data [2017]"
+# Sentinel-2 image courtesy of "Copernicus Sentinel data [2017]"
 
 ![alt text](https://github.com/sankar19/gthOSM/blob/master/France1_RGB_rsz.jpg)
 
