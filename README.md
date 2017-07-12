@@ -23,9 +23,9 @@ For France it is named: france-latest.osm.pbf
     ```bin/osmosis --read-pbf file="/data/france-latest.osm.pbf" --bounding-polygon file="/data/france.poly" --write-pbf file="/data/france_poly.osm.pbf"```
 
 
-5. A specific feature or class can be extracted by the following python script. The python script was extended from pyosmium examples [https://github.com/osmcode/pyosmium/blob/master/examples/filter_coastlines.py].
+5. A specific feature or class can be extracted by the following python script [forests.py](https://github.com/sankar19/gthOSM/forests.py). The python script was extended from pyosmium examples [https://github.com/osmcode/pyosmium/blob/master/examples/filter_coastlines.py].
 
-    ```python [forests.py](https://github.com/sankar19/gthOSM/forests.py)  /data/france_poly.osm.pbf /data/forests_france.pbf```
+    ```python forests.py /data/france_poly.osm.pbf /data/forests_france.pbf```
 
 6. Then two tools are used to convert the .pbf to .geojson
 
