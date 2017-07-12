@@ -1,13 +1,3 @@
-"""
-Filter all objects with a coastline tag.
-
-This example shows how to write objects to a file.
-
-We need to go twice over the file. First read the ways, filter the ones
-we are interested in and remember the nodes required. Then, in a second
-run all the relevant nodes and ways are written out.
-"""
-
 import osmium as o
 import sys
 
