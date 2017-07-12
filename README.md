@@ -7,7 +7,7 @@ The following tools were used to convert the open street map in pbf format to a 
 1. One band of Sentinel-1 or 2 (or other sensor) image in geotiff format is required. The RGB image over the region of France is shown below:
 
 
-![alt text](https://github.com/sankar19/gthOSM/France1_RGB_rsz.jpg)
+![alt text](https://github.com/sankar19/gthOSM/blob/master/France1_RGB_rsz.jpg)
 
 2. Openstreet map in pbf format could be dowloaded from http://download.geofabrik.de/ for a country or states for large countries.
 For France it is named: france-latest.osm.pbf
