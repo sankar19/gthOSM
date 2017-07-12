@@ -29,9 +29,9 @@ For France it is named: france-latest.osm.pbf
 
 6. Then two tools are used to convert the .pbf to .geojson
 
-    ```./osmconvert64 /data/forests_france.pbf > /data/forests_france.osm
+    ```./osmconvert64 /data/forests_france.pbf > /data/forests_france.osm```
 
-    osmtogeojson /data/forests_france.osm > /data/forests_france.geojson```
+    ```osmtogeojson /data/forests_france.osm > /data/forests_france.geojson```
 
 
 7. In the final step, binary image for the forest class is obtained by utilizing rio raserize tool.
