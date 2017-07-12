@@ -4,9 +4,9 @@ Steps to generate ground truth image from open street map,
 
 The following tools were used to convert the open street map in pbf format to a tif file. Note there could be other steps to accomplish the following.
 
-1. One band of Sentinel-1 (or other sensor) image in geotiff format is required. The image shown is VH band of S1 image over the region of France.
+1. One band of Sentinel-1 or 2 (or other sensor) image in geotiff format is required. The RGB image over the region of France is shown below:
 
-
+![alt tag](https://github.com/sankar19/gthOSM/France1_RGB_rsz.jpg)
 
 2. Openstreet map in pbf format could be dowloaded from http://download.geofabrik.de/ for a country or states for large countries.
 For France it is named: france-latest.osm.pbf
